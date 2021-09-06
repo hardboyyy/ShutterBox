@@ -1,0 +1,41 @@
+<%- include('partials/header') -%>
+
+<section id="banner">
+    <div class="container">
+      <div class="banner-caption">
+        <div class="row justify-content-end align-items-center">
+          <!-- <div class="col-sm-6"></div> -->
+          <div class="col-sm-6 col-md-4 mt-5">
+            <h2 class="text-uppercase"><%= albumName %></h2>
+            <p>Our cinematic techniques making us more famous
+              as a best wedding cinematographers in delhi, india.
+              Look our wedding and pre wedding cinematography here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br />
+  <br />
+  <br />
+
+<section id="gallery">
+    <div class="container">
+      <div class="row">
+          <br />
+          <br />
+          <br />
+          <button class="btn btn-link"> <== back to wedding </button>
+        <div id="gallerylight">
+            <% albumPhotos.map((image) => { %>
+                <a data-src="<%= image %>" class="gallery-item">
+                    <img src="<%= image %>" class="img-responsive">
+                  </a>
+            <% }) %>       
+        </div>      
+      </div>
+    </div>
+  </section>
+
+<%- include('partials/footer') -%>

@@ -1,0 +1,97 @@
+<%- include('partials/header') -%>
+
+
+<section id="contact">
+    <div class="container">
+        <div style="position: relative; min-height: 400px; max-height: 400px;">
+            <div class="location-map" tabindex="0" aria-label="Map" role="group" aria-roledescription="map">
+                <iframe
+                  aria-hidden="true"
+                  frameborder="0"
+                  tabindex="-1"
+                  width="100%"
+                  height="100%"
+
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30147.92949691402!2d72.92804733269149!3d19.173737155206332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8f20aff8003%3A0x162a4dae186b3659!2sMulund%20West%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1629822083836!5m2!1sen!2sin"
+                ></iframe>
+            </div>
+        </div>
+        <div style="clear: both; height: 50px"></div>
+      <div class="row">
+        <div class="col-sm-12">
+        </div>
+        <div class="col-sm-6">
+          <div class="contact-info mt-6">
+            <h3>Give us a call</h3>
+            <br />
+            <h2>(+91) 98188 25848</h2>
+            <p>
+              Call us for any kind of support. We will provide you effective
+              resolution for any query you have.
+            </p>
+            <a class="btn btn-primary" href="tel:1234567890">Call us</a>
+            <div style="clear: both; height: 50px"></div>
+            <h3>Shoot us an email</h3>
+            <h1>shutterbox@gmail.com</h1>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <form action="/contact" method="POST">
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Your Name</label>
+              <input
+                type="text"
+                class="form-control"
+                name="fullName"
+                id=""
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email">Email id</label>
+              <input
+                type="email"
+                class="form-control"
+                class="form-label"
+                name="email"
+                id=""
+              />
+            </div>
+            <div class="mb-3">
+              <label for="contactUs" class="form-label">Contact us</label>
+              <input
+                type="text"
+                class="form-control"
+                name="contactUs"
+                id=""
+              />
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input
+                type="text"
+                class="form-control"
+                name="subject"
+                id=""
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                name="message"
+                class="form-control"
+                id=""
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+  </section>
+
+<%- include('partials/footer') -%>

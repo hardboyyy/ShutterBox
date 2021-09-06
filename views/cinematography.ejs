@@ -1,0 +1,43 @@
+<%- include('partials/header') -%>
+
+<section id="banner">
+    <div class="container">
+      <div class="banner-caption">
+        <div class="row justify-content-end align-items-center">
+          <!-- <div class="col-sm-6"></div> -->
+          <div class="col-sm-6 col-md-4 mt-5">
+            <h2 class="text-uppercase">cinematography</h2>
+            <p>Our cinematic techniques making us more famous
+              as a best wedding cinematographers in delhi, india.
+              Look our wedding and pre wedding cinematography here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br /> 
+  <br /> 
+  <br /> 
+
+  <section id="cinematography">
+    <div class="container">
+        <div class="row" id="wedding-cinema-gallery">
+            <% cinematography.map((cinema) => { %>
+                <div class="col-xs-6 col-sm-4 col-md-3" data-src="<%= cinema.video_link %>">
+                    <div class="album-list-item">
+                      <a href="https://www.youtube.com/watch?v=JLuU-6Slc0M" class="album-link">
+                        <img class="d-block img-fluid border-0" src="<%= cinema.image_placeholder %>" alt="">
+                        <i class="bi bi-play"></i>
+                      </a>
+                    </div>
+                    <div class="album-caption pt-2 text-center">
+                      <h6 class="text-uppercase"><%= cinema.name %></h6>
+                    </div>
+                  </div>
+            <% }) %>
+      </div>  
+    </div>
+  </section>
+
+<%- include('partials/footer') -%>

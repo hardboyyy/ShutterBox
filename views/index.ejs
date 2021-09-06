@@ -1,0 +1,209 @@
+<%- include('partials/header') -%>
+
+        <!-- *************************************************************************** -->
+
+        <!-- Main Section start -->
+        <section id="hero">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="/images/home_banner/banner1.jpeg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <img src="/images/home_banner/banner2.jpeg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <img src="/images/home_banner/banner3.jpeg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <img src="/images/home_banner/banner4.jpeg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                </div>
+              </div>
+        </section>
+        <br />
+        <br />
+        <br />
+        <!-- Main Section end -->
+
+        <!-- *************************************************************************** -->
+        
+        <!-- What we do start -->
+        <section id="what-we-do">
+            <div class="container">
+                <h3 class="text-uppercase">What we do</h3>
+                <br />
+                <div class="row gy-4">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card h-100">
+                            <img src="/images/what_we_do/whatwedo1.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wedding</h5>
+                              <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                              </p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card h-100">
+                            <img src="/images/what_we_do/whatwedo2.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pre Wedding</h5>
+                              <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                              
+                              </p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card h-100">
+                            <img src="/images/what_we_do/whatwedo3.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Cinematography</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                    </div>
+                    
+                </div>
+            </div>       
+        </section>
+        <br />
+        <br />
+        <br />
+
+        <!-- What we do end -->
+
+        <!-- *************************************************************************** -->
+
+        <!-- Gallery start -->
+        <section id="gallery">
+            <div class="container">
+              <h3 class="text-uppercase">Our gallery</h3>
+              <br />
+              <div class="row">
+                <div id="gallerylight">
+                    <% gallery.map((image) => { %>
+                        <a data-src="<%= image %>" class="gallery-item">
+                            <img src="<%= image %>" class="img-responsive">
+                          </a>
+                    <% }) %>       
+                </div>      
+              </div>
+            </div>
+          </section>
+
+        <br />
+        <br />
+        <br />
+        <!-- Gallery end -->
+
+        <!-- *************************************************************************** -->
+
+        <!-- Testimonial start -->
+        <section id="testimonial">
+          <div class="container">
+            <h3 class="text-uppercase">Testimonials</h3>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="testimonials">
+                  <div id="carousel1" class="owl-carousel">
+                      <% customerReview.map((review) => { %>
+                        <div class="item">
+                            <div class="card text-center">
+                              <img src= "<%= review.image_url %>" class="card-img-top" alt="">
+                              <div class="card-body">
+                                <h5><%= review.name %></h5>
+                                <p class="card-text"><%= review.message %></p>
+                              </div>
+                            </div>
+                          </div>
+                     <% }) %>
+                    
+                    <!-- <div class="item">
+                      <div class="card text-center">
+                        <img src="./assets/images/gallery/gallery_26.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5>John Doe</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi porro voluptatem sed iste earum veritatis enim, vero libero odit eius sint quos. Adipisci, incidunt non ratione labore dolore cupiditate vero delectus sapiente fugiat amet corporis? Deserunt minus magni excepturi!</p>
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        <br />
+        <br />
+        <br />
+        <!-- Testimonial end -->
+
+        <!-- *************************************************************************** -->
+
+        <!-- Contact start -->
+
+        <section id="contact">
+          <div class="container">
+            <h3 class="text-uppercase">Contact Us</h3>
+            <p>Need answers of your queries? Don't worry we've got your back.</p>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="contact-info mt-3">
+                  <h3>Give us a call</h3>
+                  <br />
+                  <h2>(+91) 98188 25848</h2>
+                  <p>Call us for any kind of support. We will provide you effective resolution for any query you have.</p>
+                  <a class="btn btn-primary" href="tel:1234567890">Call us</a>
+                  <div style="clear: both; height: 50px;"></div>
+                  <h3>Shoot us an email</h3>
+                  <h1>shutterbox@gmail.com</h1>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <form action="/contact" method="POST">
+                  <div class="mb-3">
+                    <label for="fullName" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" name="fullName" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email">Email id</label>
+                    <input type="email" class="form-control" class="form-label" name="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="contactUs" class="form-label">Contact us</label>
+                    <input type="tel" class="form-control" name="contactUs" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" name="subject" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea name="message" class="form-control" required cols="30" rows="5"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+
+              
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+
+        </section>
+
+        <!-- Contact end -->
+
+        <!-- *************************************************************************** -->
+
+<%- include('partials/footer') -%>

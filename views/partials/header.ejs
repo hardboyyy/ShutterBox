@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- owl carousel -->
+    <!-- <link rel="stylesheet" href="/public/vendors/owlcarousel/public/owl.carousel.css">
+    <link rel="stylesheet" href="/public/vendors/owlcarousel/public/owl.theme.default.min.css"> -->
+    <link rel="stylesheet" href="/vendors/owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="/vendors/owlcarousel/assets/owl.theme.default.min.css">
+
+    <!-- light gallery -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0/css/lightgallery.min.css" integrity="sha512-LeCCaxc1iF2UArsp3NWiOAz1mSLXFXmuiOm2n8gxOSnCXIltE27/NV9yGshWgHSCKNigfDiJUskpRiithdGc3A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="/vendors/justifiedGallery.min.css" />
+    <link rel="stylesheet" href="/vendors/lightGallery-master/dist/css/lightgallery-bundle.css" />
+    <link rel="stylesheet" href="/css/style.css">
+
+  
+    <title>Shutterbox</title>
+</head>
+<body>
+    <main>
+        <!-- Header start -->
+        <header>
+            <nav class="navbar navbar-expand-lg sticky navbar-light bg-transparent">
+                <div class="container">
+                  <a class="navbar-brand" href="/">
+                    <!-- <img src="/public/images/Logo.jpeg" alt="" width="30" height="24"> -->
+                    Shutterbox
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav justify-content-center">
+                      <li class="nav-item">
+                        <a class="nav-link <%= (path === 'home') ? 'active' : '' %>" aria-current="page" href="/">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link <%= (path === 'wedding') ? 'active' : '' %>" href="/wedding">Wedding</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link <%= (path === 'pre_wedding') ? 'active' : '' %>" href="/pre_wedding">Pre Wedding</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link <%= (path === 'cinematography') ? 'active' : '' %>" href="/cinematography">Cinematography</a>
+                      </li>
+                      <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                      </li> -->
+                      <li class="nav-item">
+                        <a class="nav-link <%= (path === 'contact') ? 'active' : '' %>" href="/contact">Contact us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
